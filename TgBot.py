@@ -238,7 +238,7 @@ async def handle_message(message: types.Message):
         if message.text.strip().lower() == "я самая красивая девочка?":
             await message.answer('Да ты самая красивая девочка!💘, что за вопросы?!?')
         elif message.text.strip().lower() == "покажи мне самую красивую девочку":
-            with open('photo.jpg', 'rb') as photo:
+            with open('photo.png', 'rb') as photo:
                 await message.answer_photo(photo, caption="Вот она!😍")
         elif message.text.strip().lower() == "у кого самые красивые ноготочки?":
             await message.answer('У тебя!!')
